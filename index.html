@@ -342,6 +342,37 @@ onclick="showScreen('levels')">
 <p id="selectedLevel"></p>
 
 <div class="coloring-area">
+  <div class="tools">
+
+  <button onclick="setTool('paint')">
+    🪣 تلوين
+  </button>
+
+  <button onclick="setTool('eraser')">
+    🧽 ممحاة
+  </button>
+
+  <button onclick="undoColor()">
+    ↩️ تراجع
+  </button>
+
+  <button onclick="resetDrawing()">
+    🔄 إعادة
+  </button>
+
+</div>
+
+<div class="progress-box">
+
+  <div class="progress-text">
+    التقدم: <span id="progressText">0%</span>
+  </div>
+
+  <div class="progress-bar">
+    <div id="progressFill"></div>
+  </div>
+
+</div>
 
   <svg id="rabbitDrawing"
        viewBox="0 0 500 500"
