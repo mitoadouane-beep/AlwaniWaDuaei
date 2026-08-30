@@ -59,3 +59,32 @@ function listenDua() {
   );
 
 }
+let selectedColor = "#ff6b6b";
+
+function selectColor(color) {
+  selectedColor = color;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const parts = document.querySelectorAll(".paint-part");
+
+  parts.forEach(function (part) {
+
+    part.addEventListener("click", function () {
+
+      part.setAttribute("fill", selectedColor);
+
+    });
+
+    part.addEventListener("touchstart", function (event) {
+
+      event.preventDefault();
+
+      part.setAttribute("fill", selectedColor);
+
+    }, { passive: false });
+
+  });
+
+});
