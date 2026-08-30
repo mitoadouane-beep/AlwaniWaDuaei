@@ -341,12 +341,96 @@ onclick="showScreen('levels')">
 
 <p id="selectedLevel"></p>
 
-<div style="
-font-size:140px;
-margin:40px;
-">
+<div class="coloring-area">
 
-🐰
+  <svg id="rabbitDrawing"
+       viewBox="0 0 500 500"
+       xmlns="http://www.w3.org/2000/svg">
+
+    <!-- الأذنان -->
+    <ellipse class="paint-part"
+             cx="190" cy="130"
+             rx="45" ry="100"
+             fill="#ffffff"/>
+
+    <ellipse class="paint-part"
+             cx="310" cy="130"
+             rx="45" ry="100"
+             fill="#ffffff"/>
+
+    <!-- الرأس -->
+    <circle class="paint-part"
+            cx="250" cy="260"
+            r="130"
+            fill="#ffffff"/>
+
+    <!-- الجسم -->
+    <ellipse class="paint-part"
+             cx="250" cy="410"
+             rx="125" ry="100"
+             fill="#ffffff"/>
+
+    <!-- العينان -->
+    <circle cx="205" cy="245"
+            r="15"
+            fill="#263238"/>
+
+    <circle cx="295" cy="245"
+            r="15"
+            fill="#263238"/>
+
+    <!-- الأنف -->
+    <path class="paint-part"
+          d="M235 285 Q250 270 265 285 Q250 305 235 285"
+          fill="#ffffff"/>
+
+    <!-- الفم -->
+    <path d="M250 300 Q250 325 225 325"
+          fill="none"
+          stroke="#263238"
+          stroke-width="6"/>
+
+    <path d="M250 300 Q250 325 275 325"
+          fill="none"
+          stroke="#263238"
+          stroke-width="6"/>
+
+  </svg>
+
+</div>
+
+
+<div class="colors">
+
+  <button class="color"
+          style="background:#ff6b6b"
+          onclick="selectColor('#ff6b6b')"></button>
+
+  <button class="color"
+          style="background:#ffd93d"
+          onclick="selectColor('#ffd93d')"></button>
+
+  <button class="color"
+          style="background:#6bcB77"
+          onclick="selectColor('#6bcB77')"></button>
+
+  <button class="color"
+          style="background:#4d96ff"
+          onclick="selectColor('#4d96ff')"></button>
+
+  <button class="color"
+          style="background:#9b5de5"
+          onclick="selectColor('#9b5de5')"></button>
+
+  <button class="color"
+          style="background:#ff8fab"
+          onclick="selectColor('#ff8fab')"></button>
+
+  <button class="color"
+          style="background:#8d6e63"
+          onclick="selectColor('#8d6e63')"></button>
+
+</div>
 
 </div>
 
